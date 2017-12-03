@@ -5,22 +5,48 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <!-- CSS links -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
 
 <body>
+    <h1>NES Trivia!</h1>
+      <div id="container">
+        <div id="timer-outside">
+          <span>Time Remaining:</span>
+            <div id="timer-inside">
+              <div class="timer-bar-full"></div>
+            </div>
+            <span id="timer-counter"></span>
+        </div>
+  
+        <h2>READY?</h2>
+        <h3 id="message"></h3>
 
-  <div class="trivia-board">
-    <div class="inside"> </div>
-  </div>
+        <div id="answer-choices">
+          <form id="answer-form">
+            <input type="radio" name="answer" class="answer" id="answer-choice-1" value="" />
+              <label id="answer-choice-1-label" for=""></label>
+            <input type="radio" name="answer" class="answer" id="answer-choice-2" value="" />
+              <label id="answer-choice-2-label" for=""></label>
+            <input type="radio" name="answer" class="answer" id="answer-choice-3" value="" />
+              <label id="answer-choice-3-label" for=""></label>
+          </form>
+        </div> <!-- close answer-choices -->
+      
+        <hr />
+
+        <p class="btn" id="start">START</p>
+        <p class="btn" id="next">NEXT</p>
+
+      </div> <!-- close container div -->
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 </html>
